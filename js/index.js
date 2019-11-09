@@ -48,3 +48,15 @@ navSection[2].textContent = siteContent["nav"]["nav-item-3"];
 navSection[3].textContent = siteContent["nav"]["nav-item-4"];
 navSection[4].textContent = siteContent["nav"]["nav-item-5"];
 navSection[5].textContent = siteContent["nav"]["nav-item-6"];
+
+const domAwe = document.querySelector(".cta-text");
+domAwe.textContent = siteContent["cta"]["h1"];
+
+const circleImg = document.querySelector("#cta-img");
+circleImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+const theButton = document.querySelector(".cta-text button");
+theButton.textContent = siteContent["cta"]["button"];
+
+// button doesnt work
+
