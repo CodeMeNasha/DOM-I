@@ -52,6 +52,11 @@ navSection[5].textContent = siteContent["nav"]["nav-item-6"];
 //const domAwe = document.querySelector(".cta-text");
 //domAwe.textContent = siteContent["cta"]["h1"];
 
+var newString = siteContent.cta.h1.split(' ').join('\n');
+const cta_h1 = document.querySelector('.cta-text h1');
+cta_h1.innerText=newString;
+
+
 const circleImg = document.querySelector("#cta-img");
 circleImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
