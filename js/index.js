@@ -49,8 +49,8 @@ navSection[3].textContent = siteContent["nav"]["nav-item-4"];
 navSection[4].textContent = siteContent["nav"]["nav-item-5"];
 navSection[5].textContent = siteContent["nav"]["nav-item-6"];
 
-const domAwe = document.querySelector(".cta-text");
-domAwe.textContent = siteContent["cta"]["h1"];
+//const domAwe = document.querySelector(".cta-text");
+//domAwe.textContent = siteContent["cta"]["h1"];
 
 const circleImg = document.querySelector("#cta-img");
 circleImg.setAttribute("src", siteContent["cta"]["img-src"]);
@@ -60,3 +60,14 @@ theButton.textContent = siteContent["cta"]["button"];
 
 // button doesnt work
 
+const h4Section = document.querySelectorAll("h4");
+h4Section[0].textContent = siteContent["main-content"]["features-h4"];
+h4Section[1].textContent = siteContent["main-content"]["about-h4"];
+h4Section[2].textContent = siteContent["main-content"]["services-h4"];
+h4Section[3].textContent = siteContent["main-content"]["vision-h4"];
+
+const mainPs = document.querySelectorAll("p");
+mainPs[0].textContent = siteContent["main-content"]["features-content"];
+mainPs[1].textContent = siteContent["main-content"]["about-content"];
+mainPs[2].textContent = siteContent["main-content"]["services-content"];
+mainPs[3].textContent = siteContent["main-content"]["vision-content"];
