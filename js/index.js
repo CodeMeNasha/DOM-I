@@ -82,3 +82,6 @@ const contactP = document.querySelectorAll(".contact p");
 contactP[0].textContent = siteContent["contact"]["address"];
 contactP[1].textContent = siteContent["contact"]["phone"];
 contactP[2].textContent = siteContent["contact"]["email"];
+
+const lowestSection = document.querySelector(".footer p");
+lowestSection.textContent = siteContent["footer"]["copyright"];
