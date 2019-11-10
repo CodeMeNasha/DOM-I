@@ -104,6 +104,12 @@ footerPart.textContent = siteContent["footer"]["copyright"];
 const newContent = document.createElement("a");
 console.log(newContent);
 newContent.textContent = "year 2019";
+
 const parentEl = document.querySelector("nav");
 parentEl.append(newContent);
 
+const secondContent = document.createElement("a");
+secondContent.textContent = "November";
+
+const otherParent = document.querySelector("nav");
+otherParent.prepend(secondContent);
