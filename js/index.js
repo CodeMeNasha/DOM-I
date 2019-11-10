@@ -54,9 +54,6 @@ navSection.forEach( element =>{
   element.style.color= "green"
 });
 
-//const domAwe = document.querySelector(".cta-text");
-//domAwe.textContent = siteContent["cta"]["h1"];
-
 var newString = siteContent.cta.h1.split(' ').join('\n');
 const cta_h1 = document.querySelector('.cta-text h1');
 cta_h1.innerText=newString;
@@ -67,8 +64,6 @@ circleImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 const theButton = document.querySelector(".cta-text button");
 theButton.textContent = siteContent["cta"]["button"];
-
-// button doesnt work
 
 const h4Section = document.querySelectorAll("h4");
 h4Section[0].textContent = siteContent["main-content"]["features-h4"];
@@ -93,5 +88,22 @@ contactP[0].textContent = siteContent["contact"]["address"];
 contactP[1].textContent = siteContent["contact"]["phone"];
 contactP[2].textContent = siteContent["contact"]["email"];
 
-const lowestSection = document.querySelector(".footer p");
-lowestSection.textContent = siteContent["footer"]["copyright"];
+const footerPart = document.querySelector("footer p");
+console.log(footerPart);
+footerPart.textContent = siteContent["footer"]["copyright"];
+
+//task 3
+
+// const firstPart = document.createElement("a");
+// firstPart.textContent = "Year 2019";
+
+// const parentElement = document.querySelector("header");
+
+// parentElement.prepend(firstPart);
+
+const newContent = document.createElement("a");
+console.log(newContent);
+newContent.textContent = "year 2019";
+const parentEl = document.querySelector("nav");
+parentEl.append(newContent);
+
