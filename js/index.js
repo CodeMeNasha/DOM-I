@@ -49,6 +49,11 @@ navSection[3].textContent = siteContent["nav"]["nav-item-4"];
 navSection[4].textContent = siteContent["nav"]["nav-item-5"];
 navSection[5].textContent = siteContent["nav"]["nav-item-6"];
 
+//task3
+navSection.forEach( element =>{
+  element.style.color= "green"
+});
+
 //const domAwe = document.querySelector(".cta-text");
 //domAwe.textContent = siteContent["cta"]["h1"];
 
