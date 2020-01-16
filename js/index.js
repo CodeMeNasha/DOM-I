@@ -40,3 +40,74 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Example: Update the img src for the logo
+let logo = document.getElementById("logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const navSection = document.querySelectorAll("nav a");
+navSection[0].textContent = siteContent["nav"]["nav-item-1"];
+navSection[1].textContent = siteContent["nav"]["nav-item-2"];
+navSection[2].textContent = siteContent["nav"]["nav-item-3"];
+navSection[3].textContent = siteContent["nav"]["nav-item-4"];
+navSection[4].textContent = siteContent["nav"]["nav-item-5"];
+navSection[5].textContent = siteContent["nav"]["nav-item-6"];
+
+//task 2
+navSection.forEach( element =>{
+  element.style.color= "green"
+});
+
+var newString = siteContent.cta.h1.split(' ').join('\n');
+const cta_h1 = document.querySelector('.cta-text h1');
+cta_h1.innerText=newString;
+
+
+const circleImg = document.querySelector("#cta-img");
+circleImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+
+const theButton = document.querySelector(".cta-text button");
+theButton.textContent = siteContent["cta"]["button"];
+
+const h4Section = document.querySelectorAll("h4");
+h4Section[0].textContent = siteContent["main-content"]["features-h4"];
+h4Section[1].textContent = siteContent["main-content"]["about-h4"];
+h4Section[2].textContent = siteContent["main-content"]["services-h4"];
+h4Section[3].textContent = siteContent["main-content"]["vision-h4"];
+
+const mainPs = document.querySelectorAll("p");
+mainPs[0].textContent = siteContent["main-content"]["features-content"];
+mainPs[1].textContent = siteContent["main-content"]["about-content"];
+mainPs[2].textContent = siteContent["main-content"]["services-content"];
+mainPs[3].textContent = siteContent["main-content"]["vision-content"];
+
+const middlePic = document.querySelector(".middle-img");
+middlePic.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+const footerSection = document.querySelector(".contact h4");
+footerSection.textContent = siteContent["contact"]["contact-h4"];
+
+const contactP = document.querySelectorAll(".contact p");
+contactP[0].textContent = siteContent["contact"]["address"];
+contactP[1].textContent = siteContent["contact"]["phone"];
+contactP[2].textContent = siteContent["contact"]["email"];
+
+const footerPart = document.querySelector("footer p");
+console.log(footerPart);
+footerPart.textContent = siteContent["footer"]["copyright"];
+
+//task 3
+
+const newContent = document.createElement("a");
+console.log(newContent);
+newContent.textContent = "year 2019";
+
+const parentEl = document.querySelector("nav");
+parentEl.append(newContent);
+
+const secondContent = document.createElement("a");
+secondContent.textContent = "November";
+
+const otherParent = document.querySelector("nav");
+otherParent.prepend(secondContent);
